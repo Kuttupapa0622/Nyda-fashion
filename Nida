@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nyda's Clothing Brand</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            padding: 15px;
+            background-color: #34495e;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #e74c3c;
+        }
+
+        .hero {
+            background: url('https://source.unsplash.com/1600x800/?fashion') no-repeat center center/cover;
+            height: 70vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .about, .collection, .contact {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .about h2, .collection h2, .contact h2 {
+            font-size: 2.5rem;
+            color: #2c3e50;
+        }
+
+        .about p, .contact p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-top: 20px;
+            color: #555;
+        }
+
+        .collection-grid {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+
+        .collection-item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            width: 30%;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .collection-item img {
+            width: 100%;
+            height: auto;
+        }
+
+        .collection-item:hover {
+            transform: scale(1.05);
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact-form button {
+            padding: 10px 20px;
+            background-color: #2c3e50;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .contact-form button:hover {
+            background-color: #e74c3c;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Nyda's Clothing Brand</h1>
+    </header>
+
+    <nav>
+        <a href="#about">About Us</a>
+        <a href="#collection">Collection</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section class="hero">
+        <h2>Elegance in Every Stitch</h2>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>At Nyda's Clothing Brand, we believe in merging timeless fashion with modern elegance. Our designs are crafted with care to ensure you feel confident, stylish, and unique with every wear. We are dedicated to providing premium quality clothing that elevates your wardrobe and complements your personal style.</p>
+    </section>
+
+    <section id="collection" class="collection">
+        <h2>Our Collection</h2>
+        <div class="collection-grid">
+            <div class="collection-item">
+                <img src="https://source.unsplash.com/400x500/?clothing" alt="Collection 1">
+            </div>
+            <div class="collection-item">
+                <img src="https://source.unsplash.com/400x500/?fashion-design" alt="Collection 2">
+            </div>
+            <div class="collection-item">
+                <img src="https://source.unsplash.com/400x500/?clothes" alt="Collection 3">
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>If you'd like to learn more about our collections or have any inquiries, feel free to reach out to us!</p>
+        <div class="contact-form">
+            <form action="submit_form.php" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Nyda's Clothing Brand | Designed with elegance and creativity</p>
+    </footer>
+
+</body>
+</html>
